@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Huzinan Luo (罗胡梓楠)</title>
-<meta name="description" content="Huzinan Luo, Ph.D. student at Beihang University. Federated learning, client sampling, staleness-aware scheduling.">
+<meta name="description" content="Huzinan Luo, Ph.D. student at Beihang University. Federated learning and multi-agent control.">
 <style>
   :root {
     --ink: #1a1a1a;
@@ -28,6 +28,8 @@
   hr { border: 0; border-top: 1px solid var(--rule); margin: 26px 0; }
   h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;
        color: var(--muted); font-weight: 600; margin: 0 0 10px; }
+  h3 { font-size: 16px; font-weight: 600; margin: 18px 0 6px; }
+  h3:first-of-type { margin-top: 0; }
   p { margin: 0 0 14px; }
   ul { margin: 0 0 14px; padding-left: 20px; }
   li { margin: 0 0 6px; }
@@ -55,10 +57,18 @@
   <hr>
 
   <h2>Research interests</h2>
+
+  <h3>Federated learning</h3>
   <ul>
-    <li>Federated learning: client sampling, partial participation, server-side state</li>
+    <li>Client sampling and partial participation, with persistent server-side state</li>
     <li>Staleness-aware refresh scheduling and tail control under a fixed per-round budget</li>
     <li>Feedback coupling between adaptive aggregation and client selection</li>
+  </ul>
+
+  <h3>Multi-agent control</h3>
+  <ul>
+    <li>Cooperative control of networked multi-agent systems</li>
+    <li>Distributed coordination when agents exchange only partial state over a constrained interaction topology</li>
   </ul>
 
   <hr>
@@ -66,10 +76,15 @@
   <h2>About</h2>
   <p>
     I am a first-year direct-entry Ph.D. student in Control Science and Engineering at Beihang University.
-    My current work studies how adaptive aggregation weights in federated learning become the next round's
-    sampling distribution, and how the resulting persistent server-side cache accumulates staleness.
-    I am interested in schedulers that bound the worst-case refresh gap without increasing the per-round
-    communication budget.
+    My work has two directions that share one question: how a group of agents should coordinate when none of
+    them can see the whole picture. In federated learning I study how adaptive aggregation weights become the
+    next round's sampling distribution, and how the resulting persistent server-side cache accumulates
+    staleness; in multi-agent control I study cooperative coordination over limited interaction topologies.
+  </p>
+
+  <p>
+    On the federated-learning side, I am interested in schedulers that bound the worst-case refresh gap
+    without increasing the per-round communication budget.
   </p>
 
   <p style="color: var(--muted); font-size: 14px; margin-top: 26px;">
